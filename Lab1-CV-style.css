@@ -1,0 +1,118 @@
+body {
+    background-color: #FAFAF8;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+h1 {
+    color: #800020;
+    font-size: clamp(28px, 5vw, 44px);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 16px;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+p {
+    line-height: 1.6;
+}
+li {
+    line-height: 1.6;
+}
+.contact {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contact p {
+    margin: 0;
+}
+.contact a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+.contact a:hover {
+    color:#800020;
+}
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+hr {
+    border: none;
+    border-top: 1px solid #DDDDDD;
+    margin: 15px 0;
+}
+article {
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+}
+#experience article {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+.employer {
+    color: #800020;
+    font-weight: 600;
+    margin-top: 5px;
+}
+#education article {
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+#skills article {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+.job-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.dates {
+    font-size: 14px;
+    color: #666666;
+}
+.job-details p {
+    margin: 0;
+}
+#experience article > p {
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+#experience ul {
+    padding-left: 22px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+@media (max-width: 600px) {
+    .job-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    #skills article {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+}
